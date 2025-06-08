@@ -21,7 +21,7 @@ if(NOT CMAKE_CROSSCOMPILING)
   option(INJA_BUILD_TESTS "" OFF)
   option(BUILD_BENCHMARK "" OFF)
   find_or_fetch_package(inja 3.3 GIT_REPOSITORY https://github.com/pantor/inja
-                        GIT_TAG master)
+                        GIT_TAG main)
 
   add_executable(svd_converter src/main.cpp)
 

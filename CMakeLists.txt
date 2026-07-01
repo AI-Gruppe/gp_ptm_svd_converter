@@ -12,16 +12,16 @@ if(NOT CMAKE_CROSSCOMPILING)
   include(cmake_helpers/FindOrFetch.cmake)
 
   find_or_fetch_package(fmt 8 GIT_REPOSITORY https://github.com/fmtlib/fmt.git
-                        GIT_TAG master)
+                        GIT_TAG main)
   find_or_fetch_package(nlohmann_json 3.9 GIT_REPOSITORY
-                        https://github.com/nlohmann/json GIT_TAG master)
+                        https://github.com/nlohmann/json GIT_TAG main)
   find_or_fetch_package(pugixml 1.11 GIT_REPOSITORY
                         https://github.com/zeux/pugixml GIT_TAG master)
   option(INJA_USE_EMBEDDED_JSON "" OFF)
   option(INJA_BUILD_TESTS "" OFF)
   option(BUILD_BENCHMARK "" OFF)
   find_or_fetch_package(inja 3.3 GIT_REPOSITORY https://github.com/pantor/inja
-                        GIT_TAG master)
+                        GIT_TAG main)
 
   add_executable(svd_converter src/main.cpp)
 

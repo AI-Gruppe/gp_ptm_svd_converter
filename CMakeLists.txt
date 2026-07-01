@@ -12,7 +12,7 @@ if(NOT CMAKE_CROSSCOMPILING)
   include(cmake_helpers/FindOrFetch.cmake)
 
   find_or_fetch_package(fmt 11.1 GIT_REPOSITORY https://github.com/fmtlib/fmt.git
-                        GIT_TAG master)
+                        GIT_TAG main)
   find_or_fetch_package(nlohmann_json 3.11 GIT_REPOSITORY
                         https://github.com/nlohmann/json GIT_TAG master)
   find_or_fetch_package(pugixml 1.15 GIT_REPOSITORY
